@@ -1,0 +1,24 @@
+<div class="header">
+    <ul>
+       <li><a routerLink="/books"> Livres</a></li> 
+        <li> <a routerLink="/activateabonnement">Activate abonnement</a> </li>   
+       <li><a routerLink="/premiumpage">abonnement page</a></li> 
+<li><input type="text" placeholder="search"></li>
+<button mat-icon-button [matMenuTriggerFor]="menu" id="button">
+    <mat-icon>account_circle</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>
+      <mat-icon>exit_to_app</mat-icon>
+      <span ><a routerLink="/main">Logout</a></span>
+    </button>
+    <button mat-menu-item >
+        <mat-icon>settings</mat-icon>
+      <span><a routerLink="/main">Confidentiality</a></span>
+    </button>
+    
+  </mat-menu>
+    </ul>
+
+
+</div>
